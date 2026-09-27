@@ -1,0 +1,18 @@
+# Copyright 2026 Loreum Digital Inc
+# SPDX-License-Identifier: Apache-2.0
+
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+retiqo = ">=0.1.0"
+python-dotenv = ">=1.0"
+
+[dev-packages]
+pytest = ">=7.4"
+
+[scripts]
+test = "pytest"
+sync-schemas = "python tools/sync_memory_schema.py"
